@@ -10,7 +10,7 @@ export function SkillsSection() {
     <Section id="skills" className="pt-2 md:pt-4">
       <Reveal>
         <div className="text-center mb-8">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-[var(--text-strong)] mb-6">
             Skills
           </h2>
           <p className="text-lg text-[var(--text-soft)] max-w-2xl mx-auto">

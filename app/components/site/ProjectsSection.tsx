@@ -24,7 +24,7 @@ export function ProjectsSection() {
       <Section id="projects" className="pt-4 md:pt-6">
         <Reveal>
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold text-[var(--text-strong)] mb-6">
               Projects
             </h2>
             <motion.div

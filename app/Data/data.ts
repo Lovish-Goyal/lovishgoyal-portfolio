@@ -243,7 +243,7 @@ export const projects: Project[] = [
     thumbnail: "/projects/attendance.svg",
     techStack: ["Python", "OpenCV", "Face Recognition", "MySQL", "Flask API"],
     demoUrl: "https://youtu.be/example-attendance-demo",
-    githubUrl: "https://github.com/Lovish-Goyal/attendance-tracker",
+    githubUrl: "https://github.com/Lovish-Goyal/smart-attendance-system",
   },
   {
     title: "AI Emotion Detection System",
@@ -251,7 +251,7 @@ export const projects: Project[] = [
     thumbnail: "/projects/emotion.svg",
     techStack: ["Python", "Keras", "TensorFlow", "OpenCV", "Deep Learning"],
     demoUrl: "https://youtu.be/example-emotion-demo",
-    githubUrl: "https://github.com/Lovish-Goyal/emotion-detection",
+    githubUrl: "https://github.com/Lovish-Goyal/Emo-Detect",
   }
 ];
 
