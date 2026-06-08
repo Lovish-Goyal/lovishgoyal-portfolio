@@ -1,0 +1,77 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for Gradients and Filters -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <dropShadow dx="0" dy="6" stdDeviation="10" flood-color="#A855F7" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern in background -->
+  <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" stroke="#FFFFFF" stroke-opacity="0.02" stroke-width="1"/>
+  <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" stroke="#FFFFFF" stroke-opacity="0.02" stroke-width="1"/>
+
+  <!-- AI Brain Connections and Sparkles Graphic -->
+  <g opacity="0.6">
+    <!-- Brain outline or nodes cluster -->
+    <path d="M 520,220 C 500,180 540,120 600,130 C 630,110 680,140 670,180 C 700,190 700,230 670,250 C 670,290 620,310 590,290 C 540,300 500,260 520,220 Z" stroke="url(#accentGrad)" stroke-width="1.5" stroke-dasharray="6, 6" stroke-linecap="round"/>
+    
+    <!-- Central AI Sparkle Star -->
+    <path d="M 600,170 Q 600,210 640,210 Q 600,210 600,250 Q 600,210 560,210 Q 600,210 600,170 Z" fill="url(#accentGrad)" filter="url(#glow)"/>
+    
+    <!-- Minor Sparkles -->
+    <path d="M 670,140 Q 670,155 685,155 Q 670,155 670,170 Q 670,155 655,155 Q 670,155 670,140 Z" fill="#E9D5FF" opacity="0.8"/>
+    <path d="M 520,260 Q 520,270 530,270 Q 520,270 520,280 Q 520,270 510,270 Q 520,270 520,260 Z" fill="#E9D5FF" opacity="0.8"/>
+  </g>
+
+  <!-- Content Group -->
+  <g transform="translate(60, 80)">
+    <!-- Logo Badge -->
+    <rect width="60" height="60" rx="16" fill="url(#accentGrad)" opacity="0.2"/>
+    <!-- OpenAI Sparkle Badge -->
+    <path d="M 30 18 Q 30 30 42 30 Q 30 30 30 42 Q 30 30 18 30 Q 30 30 30 18 Z" fill="url(#accentGrad)"/>
+    
+    <!-- Title -->
+    <text x="0" y="100" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="900" font-size="44" letter-spacing="-1">CortexKit</text>
+    
+    <!-- Tagline -->
+    <text x="0" y="135" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="600" font-size="18" opacity="0.9">Free AI Tools Directory</text>
+    
+    <!-- Description -->
+    <text x="0" y="175" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="14" font-weight="500">
+      <tspan x="0" dy="0">Discover, search, and manage hand-picked AI utilities.</tspan>
+      <tspan x="0" dy="20">Built with Flutter, offering an offline-first experience</tspan>
+      <tspan x="0" dy="20">using Hive storage and real-time push notifications.</tspan>
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 240)">
+      <!-- Badge 1 -->
+      <rect width="90" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="45" y="19" fill="#A855F7" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Flutter SDK</text>
+
+      <!-- Badge 2 -->
+      <rect x="100" width="85" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="142.5" y="19" fill="#EC4899" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">OpenAI API</text>
+
+      <!-- Badge 3 -->
+      <rect x="195" width="80" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="235" y="19" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Hive DB</text>
+      
+      <!-- Badge 4 -->
+      <rect x="285" width="95" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="332.5" y="19" fill="#10B981" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Firebase FCM</text>
+    </g>
+  </g>
+</svg>

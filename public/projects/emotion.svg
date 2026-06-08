@@ -1,0 +1,89 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for Gradients and Filters -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#0C4A6E"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <dropShadow dx="0" dy="6" stdDeviation="10" flood-color="#06B6D4" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern in background -->
+  <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+  <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Emotion Probability Analytics Graphic -->
+  <g opacity="0.8">
+    <!-- Analysis Bar 1 (HAPPY) -->
+    <rect x="520" y="140" width="160" height="18" rx="9" fill="#0F172A" stroke="#06B6D4" stroke-width="1"/>
+    <rect x="520" y="140" width="130" height="18" rx="9" fill="url(#accentGrad)" filter="url(#glow)"/>
+    <text x="505" y="153" fill="#E2E8F0" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="end">HAPPY</text>
+    <text x="665" y="153" fill="#06B6D4" font-family="sans-serif" font-weight="bold" font-size="10">82%</text>
+
+    <!-- Analysis Bar 2 (NEUTRAL) -->
+    <rect x="520" y="180" width="160" height="18" rx="9" fill="#0F172A" stroke="#0C4A6E" stroke-width="1"/>
+    <rect x="520" y="180" width="25" height="18" rx="9" fill="#06B6D4" opacity="0.5"/>
+    <text x="505" y="193" fill="#E2E8F0" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="end">NEUTRAL</text>
+    <text x="665" y="193" fill="#94A3B8" font-family="sans-serif" font-weight="bold" font-size="10">12%</text>
+
+    <!-- Analysis Bar 3 (SURPRISED) -->
+    <rect x="520" y="220" width="160" height="18" rx="9" fill="#0F172A" stroke="#0C4A6E" stroke-width="1"/>
+    <rect x="520" y="220" width="15" height="18" rx="9" fill="#06B6D4" opacity="0.3"/>
+    <text x="505" y="233" fill="#E2E8F0" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="end">SURPRISED</text>
+    <text x="665" y="233" fill="#94A3B8" font-family="sans-serif" font-weight="bold" font-size="10">6%</text>
+
+    <!-- Glowing Smiling Face outline helper -->
+    <path d="M 590,300 C 585,315 615,315 610,300" stroke="#06B6D4" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+    <circle cx="585" cy="285" r="3" fill="#60A5FA"/>
+    <circle cx="615" cy="285" r="3" fill="#60A5FA"/>
+  </g>
+
+  <!-- Content Group -->
+  <g transform="translate(60, 80)">
+    <!-- Logo Badge -->
+    <rect width="60" height="60" rx="16" fill="url(#accentGrad)" opacity="0.2"/>
+    <!-- Smiley Face outline Badge -->
+    <circle cx="30" cy="30" r="14" stroke="url(#accentGrad)" stroke-width="3" fill="none"/>
+    <path d="M 24 34 Q 30 40 36 34" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="25" cy="26" r="2" fill="url(#accentGrad)"/>
+    <circle cx="35" cy="26" r="2" fill="url(#accentGrad)"/>
+    
+    <!-- Title -->
+    <text x="0" y="100" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="900" font-size="38" letter-spacing="-1">Emotion Detector</text>
+    
+    <!-- Tagline -->
+    <text x="0" y="135" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="600" font-size="18" opacity="0.9">AI CNN Facial Expression Analyzer</text>
+    
+    <!-- Description -->
+    <text x="0" y="175" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="14" font-weight="500">
+      <tspan x="0" dy="0">Real-time facial expression classifier utilizing a</tspan>
+      <tspan x="0" dy="20">Convolutional Neural Network (CNN). Analyzes live video feeds</tspan>
+      <tspan x="0" dy="20">to classify micro-expressions into categorical percentages.</tspan>
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 240)">
+      <!-- Badge 1 -->
+      <rect width="65" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="32.5" y="19" fill="#06B6D4" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Python</text>
+
+      <!-- Badge 2 -->
+      <rect x="75" width="130" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="140" y="19" fill="#60A5FA" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">TensorFlow / Keras</text>
+
+      <!-- Badge 3 -->
+      <rect x="215" width="100" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="265" y="19" fill="#94A3B8" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Deep Learning</text>
+    </g>
+  </g>
+</svg>

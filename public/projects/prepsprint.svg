@@ -1,0 +1,96 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for Gradients and Filters -->
+  <defs>
+     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#0C4A6E"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <dropShadow dx="0" dy="8" stdDeviation="12" flood-color="#06B6D4" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="24" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern in background -->
+  <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+  <path d="M 100,0 L 100,450 M 200,0 L 200,450 M 300,0 L 300,450 M 400,0 L 400,450 M 500,0 L 500,450 M 600,0 L 600,450 M 700,0 L 700,450" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Resume Sheet & Upward Career Trajectory Graph -->
+  <g opacity="0.85">
+    <!-- Resume outline box -->
+    <rect x="500" y="140" width="130" height="170" rx="8" fill="#0F172A" stroke="url(#accentGrad)" stroke-width="1.5" filter="url(#glow)"/>
+    <line x1="520" y1="170" x2="610" y2="170" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <line x1="520" y1="190" x2="590" y2="190" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="520" y1="210" x2="600" y2="210" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="520" y1="230" x2="580" y2="230" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+    <line x1="520" y1="250" x2="605" y2="250" stroke="#22D3EE" stroke-width="2" stroke-linecap="round"/>
+    <line x1="520" y1="270" x2="570" y2="270" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Upward trajectory arrow line going way right -->
+    <path d="M 460,330 L 530,280 L 610,210 L 720,150" stroke="#06B6D4" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+    <circle cx="720" cy="150" r="8" fill="#06B6D4"/>
+    
+    <!-- Speech bubble representation for chat -->
+    <rect x="630" y="90" width="95" height="40" rx="12" fill="#0891B2"/>
+    <text x="677.5" y="114" fill="#FFFFFF" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">AI Coach</text>
+    <path d="M 645 130 L 645 140 L 655 130 Z" fill="#0891B2"/>
+
+    <!-- Job Offer Badge on the far right to fill the space -->
+    <g transform="translate(650, 220)">
+      <rect width="100" height="70" rx="10" fill="#0F172A" stroke="#06B6D4" stroke-width="1.5" filter="url(#glow)"/>
+      <text x="50" y="25" fill="#06B6D4" font-family="sans-serif" font-weight="bold" font-size="11" text-anchor="middle">HIRED</text>
+      <text x="50" y="45" fill="#E2E8F0" font-family="sans-serif" font-weight="bold" font-size="10" text-anchor="middle">Software Engineer</text>
+      <text x="50" y="58" fill="#94A3B8" font-family="sans-serif" font-size="9" text-anchor="middle">PPO Approved</text>
+    </g>
+
+    <!-- Glowing stars in empty spaces -->
+    <path d="M 720,80 Q 720,90 730,90 Q 720,90 720,100 Q 720,90 710,90 Q 720,90 720,80 Z" fill="#22D3EE" filter="url(#glow)"/>
+    <path d="M 750,330 Q 750,338 758,338 Q 750,338 750,346 Q 750,338 742,338 Q 750,338 750,330 Z" fill="#06B6D4" filter="url(#glow)"/>
+  </g>
+
+  <!-- Content Group -->
+  <g transform="translate(60, 80)">
+    <!-- Logo Badge -->
+    <rect width="60" height="60" rx="16" fill="url(#accentGrad)" opacity="0.2"/>
+    <path d="M 22 24 L 38 24 M 22 32 L 38 32 M 22 40 L 32 40" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Title -->
+    <text x="0" y="100" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="900" font-size="44" letter-spacing="-1">PrepSprint</text>
+    
+    <!-- Tagline -->
+    <text x="0" y="135" fill="#E2E8F0" font-family="'Inter', sans-serif" font-weight="600" font-size="18" opacity="0.9">AI Career Mentor &amp; Resume Builder</text>
+    
+    <!-- Description -->
+    <text x="0" y="175" fill="#94A3B8" font-family="'Inter', sans-serif" font-size="14" font-weight="500">
+      <tspan x="0" dy="0">Interactive career prep platform for crafting resumes,</tspan>
+      <tspan x="0" dy="20">practicing mock interviews with free AI chat agents,</tspan>
+      <tspan x="0" dy="20">and generating personalized technology role suggestions.</tspan>
+    </text>
+
+    <!-- Badges Row -->
+    <g transform="translate(0, 240)">
+      <!-- Badge 1 -->
+      <rect width="80" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="40" y="19" fill="#06B6D4" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">React.js</text>
+
+      <!-- Badge 2 -->
+      <rect x="90" width="115" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="147.5" y="19" fill="#22D3EE" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">Node.js / Express</text>
+
+      <!-- Badge 3 -->
+      <rect x="215" width="85" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="257.5" y="19" fill="#06B6D4" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">MongoDB</text>
+      
+      <!-- Badge 4 -->
+      <rect x="310" width="90" height="30" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="355" y="19" fill="#06B6D4" font-family="'Inter', sans-serif" font-weight="bold" font-size="11" text-anchor="middle">OpenAI API</text>
+    </g>
+  </g>
+</svg>
