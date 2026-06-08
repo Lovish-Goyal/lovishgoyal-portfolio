@@ -50,7 +50,7 @@ export function ProjectsSection() {
                 }`}>
                   <motion.div
                     whileHover={{ y: -8 }}
-                    className="relative h-64 lg:h-80 rounded-xl overflow-hidden border-2 border-[var(--surface)] hover:border-[var(--brand-500)] shadow-lg hover:shadow-2xl transition-all group"
+                    className="relative aspect-video w-full rounded-xl overflow-hidden border-2 border-[var(--surface)] hover:border-[var(--brand-500)] shadow-lg hover:shadow-2xl transition-all group"
                   >
                     <Image
                       src={project.thumbnail}
