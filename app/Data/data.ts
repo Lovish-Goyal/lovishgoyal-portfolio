@@ -121,9 +121,9 @@ export const about: AboutConfig = {
 };
 
 export const aboutStats: AboutStat[] = [
-  { value: "15+", label: "Projects" },
+  { value: "10+", label: "Projects" },
   { value: "100%", label: "Live App Rate" },
-  { value: "4+", label: "Years Exp" }
+  { value: "2+", label: "Years Exp" }
 ];
 
 export const services: Service[] = [
@@ -362,9 +362,9 @@ export const BaseInfo = {
 export const AboutInfo = {
   title: about.title,
   description: about.description1,
-  cliient: aboutStats[0]?.value || "15+",
-  experiece: aboutStats[2]?.value || "4+",
-  project: aboutStats[0]?.value || "15+",
+  cliient: aboutStats[0]?.value || "10+",
+  experiece: aboutStats[2]?.value || "2+",
+  project: aboutStats[0]?.value || "10+",
   website: "100+",
   mission: "To revolutionize the tech industry with innovative solutions.",
   vision: "To be a leader in technology and make an impact on a global scale.",
